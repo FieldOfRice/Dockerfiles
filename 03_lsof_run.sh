@@ -4,4 +4,4 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 echo "lsof might not give any output"
-docker run --net="container:$1" vls-lsof:20250823_065834_1.0.0 -nP 
+docker run --net="container:$1" --rm vls-lsof:20250823_065834_1.0.0 -nP 
